@@ -2,7 +2,9 @@
   "name": "hairdresser",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://mpetkevic.github.io/nfq-barbershop",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.11.0",
     "react": "^16.8.2",
     "react-calendar": "^2.18.1",
@@ -13,6 +15,7 @@
     "uuid": "^3.3.2"
   },
   "scripts": {
+    "deploy": "npm run build&&gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
