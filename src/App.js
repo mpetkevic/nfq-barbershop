@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {HashRouter, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import './main.scss';
 
 import Header from './components/Header/Header';
@@ -10,7 +10,7 @@ import ReservationList from './components/ReservationList/ReservationList';
 class App extends Component {
   render() {
     return (
-      <HashRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <div>
           <Header/>
           <Switch>
@@ -19,7 +19,7 @@ class App extends Component {
             <Route exact path='/reservation-list' component={ReservationList}/>
           </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     );
   }
 }

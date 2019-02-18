@@ -24,13 +24,13 @@ class Reservation extends Component {
   componentDidMount() {
     const selectedDay = this.state.date.toLocaleString('lt-LT', { year: 'numeric', month: 'numeric', day: 'numeric' });
     const clients = clientStorage.getClients();
-    const newClients = clients.filter(client => {
+    const newClients = clients && clients.filter(client => {
       if(client.selectedDay === selectedDay) {
         return client.selectedTime;
       }
     });
     console.log(newClients);
-    const newReservationTimes = clientTimes.filter(time => {
+    const newReservationTimes = clientTimes && clientTimes.filter(time => {
       let newClientsJSON = JSON.stringify(newClients)
       return !newClientsJSON.includes(time.start);
     });
@@ -45,12 +45,12 @@ class Reservation extends Component {
   onChange = date => {
     const selectedDay = date.toLocaleString('lt-LT', { year: 'numeric', month: 'numeric', day: 'numeric' });
     const clients = clientStorage.getClients();
-    const newClients = clients.filter(client => {
+    const newClients = clients && clients.filter(client => {
       if (client.selectedDay === selectedDay) {
         return client;
       }
     });
-    const newReservationTimes = clientTimes.filter(time => {
+    const newReservationTimes = clientTimes && clientTimes.filter(time => {
       let newClientsJSON = JSON.stringify(newClients);
       return !newClientsJSON.includes(time.start);
     });
@@ -94,7 +94,7 @@ class Reservation extends Component {
   render() {
     const { selectedTime, selectedDay, date, todayReservationTimes } = this.state;
     const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
-    const selectOptions = todayReservationTimes.map((time, i) => {
+    const selectOptions = todayReservationTimes && todayReservationTimes.map((time, i) => {
       return <option
         key={i}
         value={time.start}
