@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/nfq-barbershop/static/js/runtime~main.66593985.js"
   },
   {
-    "revision": "df35dc3c843912c1de05",
-    "url": "/nfq-barbershop/static/js/main.df35dc3c.chunk.js"
+    "revision": "3cc4288005f725b19cca",
+    "url": "/nfq-barbershop/static/js/main.3cc42880.chunk.js"
   },
   {
     "revision": "b5cbb87093393a2b9ea0",
     "url": "/nfq-barbershop/static/js/2.b5cbb870.chunk.js"
   },
   {
-    "revision": "df35dc3c843912c1de05",
+    "revision": "3cc4288005f725b19cca",
     "url": "/nfq-barbershop/static/css/main.3a8ee42b.chunk.css"
   },
   {
@@ -20,7 +20,7 @@ self.__precacheManifest = [
     "url": "/nfq-barbershop/static/css/2.c3448836.chunk.css"
   },
   {
-    "revision": "cbd9f0b87f73f3ec34feed597863080e",
+    "revision": "56a787d74f0a8314e525b767c346078b",
     "url": "/nfq-barbershop/index.html"
   }
 ];

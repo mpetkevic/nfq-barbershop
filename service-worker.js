@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/nfq-barbershop/precache-manifest.961dbdfe2927470628a8c9095ecce043.js"
+  "/nfq-barbershop/precache-manifest.e3fe2c7c3797625f8c1eaabb7ce87455.js"
 );
 
 workbox.clientsClaim();
