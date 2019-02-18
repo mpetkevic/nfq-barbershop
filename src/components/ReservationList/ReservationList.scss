@@ -1,0 +1,27 @@
+.reservationList {
+  background-color: #FFFFFF;
+  h2 {
+    text-align: center;
+  }
+
+  .searchByName {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-options {
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+
+    button {
+      &:hover, &.active {
+        background-color: #006edc;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+}

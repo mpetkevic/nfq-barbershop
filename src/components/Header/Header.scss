@@ -1,0 +1,32 @@
+.Header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #32b5de;
+
+  a {
+    margin: 0 5px;
+    color: white;
+    text-decoration: none;
+
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      padding: 5px 20px;
+    }
+  }
+
+  nav {
+    margin-right: 10px;
+
+    a {
+      display: inline-block;
+      margin-left: 20px;
+
+      &:hover {
+        color: #006edc;
+      }
+    }
+  }
+}
